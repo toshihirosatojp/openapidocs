@@ -1,0 +1,29 @@
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: User ID
+        name:
+          type: string
+          description: User name
+      required:
+        - id
+        - name
+    Product:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Product ID
+        title:
+          type: string
+          description: Product title
+        price:
+          type: number
+          description: Product price
+      required:
+        - id
+        - title

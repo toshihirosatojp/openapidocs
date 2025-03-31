@@ -1,0 +1,19 @@
+openapi: 3.0.3
+info:
+  title: Main API Specification
+  description: This is the main API spec that references other documents.
+  version: 1.0.0
+servers:
+  - url: https://api.example.com/v1
+    description: Production server
+paths:
+  /users:
+    $ref: 'https://toshihiro.atlassian.net/wiki/download/attachments/1921449987/endpoints.yaml#/paths/~1users'
+  /products:
+    $ref: 'https://toshihiro.atlassian.net/wiki/download/attachments/1921449987/endpoints.yaml#/paths/~1products'
+components:
+  schemas:
+    User:
+      $ref: 'https://toshihiro.atlassian.net/wiki/download/attachments/1921449987/schemas.yaml#/components/schemas/User'
+    Product:
+      $ref: 'https://toshihiro.atlassian.net/wiki/download/attachments/1921449987/schemas.yaml#/components/schemas/Product'

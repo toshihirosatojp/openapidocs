@@ -1,0 +1,25 @@
+paths:
+  /users:
+    get:
+      summary: Get a list of users
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: 'https://toshihiro.atlassian.net/wiki/download/attachments/1921449987/schemas.yaml#/components/schemas/User'
+  /products:
+    get:
+      summary: Get a list of products
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: 'https://toshihiro.atlassian.net/wiki/download/attachments/1921449987/schemas.yaml#/components/schemas/Product'
