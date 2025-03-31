@@ -10,7 +10,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: 'https://toshihiro.atlassian.net/wiki/download/attachments/1921449987/schemas.yaml#/components/schemas/User'
+                  $ref: './schemas.yaml#/components/schemas/User'
   /products:
     get:
       summary: Get a list of products
@@ -22,4 +22,4 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: 'https://toshihiro.atlassian.net/wiki/download/attachments/1921449987/schemas.yaml#/components/schemas/Product'
+                  $ref: './schemas.yaml#/components/schemas/Product'
