@@ -8,12 +8,12 @@ servers:
     description: Production server
 paths:
   /users:
-    $ref: 'https://toshihiro.atlassian.net/wiki/download/attachments/1921449987/endpoints.yaml#/paths/~1users'
+    $ref: './endpoints.yaml#/paths/~1users'
   /products:
-    $ref: 'https://toshihiro.atlassian.net/wiki/download/attachments/1921449987/endpoints.yaml#/paths/~1products'
+    $ref: './endpoints.yaml#/paths/~1products'
 components:
   schemas:
     User:
-      $ref: 'https://toshihiro.atlassian.net/wiki/download/attachments/1921449987/schemas.yaml#/components/schemas/User'
+      $ref: './schemas.yaml#/components/schemas/User'
     Product:
-      $ref: 'https://toshihiro.atlassian.net/wiki/download/attachments/1921449987/schemas.yaml#/components/schemas/Product'
+      $ref: './schemas.yaml#/components/schemas/Product'
